@@ -1,0 +1,254 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f4ef;
+  color: #344d1e;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* HEADER */
+header {
+  background-color: #2a3a13;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #e9e6dd;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #cdd4b6;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #a8bb6a;
+}
+
+/* MAIN */
+main {
+  padding-top: 90px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(42, 58, 19, 0.8),
+      rgba(42, 58, 19, 0.8)
+    ),
+    url("rolo-faca.jpg") center/cover no-repeat;
+  padding: 80px 15px;
+  border-radius: 8px;
+  margin: 0 15px 60px 15px;
+  color: #e9e6dd;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.hero-text h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #a8bb6a;
+  color: #2a3a13;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #889a54;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #a8bb6a;
+  color: #a8bb6a;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #a8bb6a;
+  color: #2a3a13;
+}
+
+/* SEÇÕES */
+.section {
+  padding: 60px 15px 80px;
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+  color: #344d1e;
+}
+
+.section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #2a3a13;
+}
+
+/* SOBRE */
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  flex: 1 1 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 240px;
+}
+
+.about-content p {
+  flex: 1 1 500px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* PRODUTO */
+.produto-section {
+  background-color: #e8f1d2;
+  border-radius: 10px;
+  padding: 60px 30px 80px;
+  box-shadow: 0 6px 20px rgba(168, 187, 106, 0.3);
+  max-width: 950px;
+  margin: 0 auto 100px auto;
+}
+
+.produto-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.produto-image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.produto-info p {
+  font-size: 1.15rem;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.produto-benefits {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.produto-benefits li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-left: 28px;
+  position: relative;
+  font-weight: 600;
+}
+
+.produto-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #a8bb6a;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+/* CONTATO */
+.contato-section {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.contato-info p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2a3a13;
+  color: #e9e6dd;
+  text-align: center;
+  padding: 18px 15px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .header-container, .about-content, .produto-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 50px 15px 70px;
+  }
+}
